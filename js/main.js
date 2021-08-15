@@ -22,9 +22,11 @@ function timer() {
 }
 function startWatch() {
   watchId = setInterval(timer, 1000);
+  refs.startBtn.disabled = true;
 }
 function stopWatch() {
   clearInterval(watchId);
+  refs.startBtn.disabled = false;
 }
 refs.startBtn.addEventListener("click", startWatch);
 refs.stopBtn.addEventListener("click", stopWatch);

@@ -1,0 +1,21 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+button {
+  font-size: 32px;
+  margin-top: 150px;
+  margin-left: 30px;
+  margin-right: 30px;
+  width: 150px;
+  height: 150px;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  background-color: aquamarine;
+}
+
+button[disabled] {
+  background-color: red;
+  cursor: auto;
+}
